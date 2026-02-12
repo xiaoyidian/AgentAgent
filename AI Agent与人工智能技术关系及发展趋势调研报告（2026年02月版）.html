@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent与人工智能技术关系及发展趋势调研报告（2026年版）</title>
+    <script src="https://image.uc.cn/s/uae/g/3n/mos-production/fontawesome-free-7.1.0-web/js/all.min.js"></script>
+    <script src="https://image.uc.cn/s/uae/g/3n/mos-production/0915/3.4.17.js"></script>
+    <script src="https://image.uc.cn/s/uae/g/3n/mos-production/0915/echarts.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background: #667eea;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+        }
+        
+        .chart-container {
+            width: 100%;
+            height: 300px;
+        }
+        
+        .section-bg-1 {
+            background-color: #f8fafc;
+        }
+        
+        .section-bg-2 {
+            background-color: #f0f9ff;
+        }
+        
+        .section-bg-3 {
+            background-color: #fef7ff;
+        }
+        
+        .section-bg-4 {
+            background-color: #fefce8;
+        }
+        
+        .skill-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            margin: 0.25rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    </style>
+<script>
+!(function(j,a,g){j.__itrace_conf = {bid: 'kt40h0wl-koyh4af8',rel: '', uid: 'e910da63-a467-4c6c-a6c2-4c90e99e22fb' ,  spa: true, plugins:['jserror','interface','perf','resource','flow','blank']};var b = a.createElement("script");var d = a.getElementsByTagName("script")[0];b.type = "text/javascript";b.crossorigin = true;b.async = true;b.onload = function(){j.__itrace && j.__itrace.setReady()};d.parentNode.insertBefore(b,d);b.src = g})(window, document, "https://g.alicdn.com/woodpeckerx/itrace-next/itrace.iife.js")
+</script>
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部导航栏 -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h1 class="text-2xl md:text-3xl font-bold">
+                        <i class="fas fa-robot mr-2"></i>AI Agent与人工智能技术关系及发展趋势调研报告
+                    </h1>
+                    <p class="text-sm md:text-base opacity-90 mt-1">2026年版 · 技术深度解析与产业前瞻</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-sm">
+                        <i class="fas fa-calendar-alt mr-1"></i>2026-02-12
+                    </span>
+                    <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-sm">
+                        <i class="fas fa-chart-line mr-1"></i>行业报告
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 摘要部分 -->
+    <section class="section-bg-1 py-12">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-file-alt text-purple-600 mr-3"></i>报告简要
+                </h2>
+                
+                <div class="prose max-w-none">
+                    <p class="text-lg text-gray-700 mb-4">
+                        本报告全面梳理了截至2026年初，AI Agent在人工智能技术体系中的核心地位、主流架构范式、产业演进趋势以及相关岗位的职责与任职要求。基于权威行业报告、企业实践与招聘数据分析，研究发现：
+                        <span class="font-bold text-purple-600">AI Agent已从概念工具演变为"新质生产力"的关键载体</span>，其本质是融合大语言模型（LLM）、任务规划、记忆系统、工具调用与多智能体协同五大核心技术的认知型自动化系统。
+                    </p>
+                    
+                    <p class="text-lg text-gray-700 mb-4">
+                        当前，<span class="font-bold text-purple-600">多Agent系统（MAS）已成为主流架构形态</span>，通过A2A与MCP等开放协议实现跨平台协作；在趋势上，AI Agent正向长期自主运行、多模态交互与具身智能方向加速跃迁，并推动商业模式从MaaS向AaaS转变。
+                    </p>
+                    
+                    <p class="text-lg text-gray-700">
+                        与此同时，人才市场需求旺盛，尤其对具备分布式系统设计、RAG优化与安全治理能力的<span class="font-bold text-purple-600">Agent架构师</span>需求缺口高达1:10。尽管面临数据安全、组织适配与商业可持续性等挑战，AI Agent已在办公协同、客户服务、研发辅助等领域展现出显著降本增效价值，标志着其进入规模化商业应用元年。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 01  核心关系 -->
+    <section class="section-bg-2 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-link text-blue-600 mr-3"></i>01：AI Agent与人工智能技术的核心关系
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <!-- 定义与本质 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-brain text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">AI Agent的定义与本质特征</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        2026年，AI Agent已超越传统聊天机器人的范畴，被广泛定义为一种<strong>具备感知、规划、记忆、执行与反思能力的任务型AI系统</strong>。它能够主动理解业务目标，将其拆解为可执行子任务序列，并调用外部工具完成端到端闭环操作。
+                    </p>
+                    <p class="text-gray-700">
+                        红杉资本提出"功能性AGI"概念，将长时程智能体视为AGI的实际体现。这表明AI Agent不仅是技术组件，更是通往更高级别智能形态的关键路径。
+                    </p>
+                </div>
+                
+                <!-- 技术依赖 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-layer-group text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">技术依赖路径：五大核心技术栈</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        AI Agent是多种人工智能核心技术深度融合的结果，其发展高度依赖以下五大核心技术，构成从感知到执行的完整技术栈：
+                    </p>
+                    <ul class="text-gray-700 space-y-2">
+                        <li><i class="fas fa-cog text-blue-500 mr-2"></i><strong>大语言模型（LLM）</strong>：提供认知中枢</li>
+                        <li><i class="fas fa-project-diagram text-blue-500 mr-2"></i><strong>任务规划与推理技术</strong>：动态调整策略</li>
+                        <li><i class="fas fa-database text-blue-500 mr-2"></i><strong>记忆系统技术</strong>：实现长期经验积累</li>
+                        <li><i class="fas fa-tools text-blue-500 mr-2"></i><strong>工具调用与外部交互技术</strong>：连接现实世界</li>
+                        <li><i class="fas fa-users text-blue-500 mr-2"></i><strong>多智能体协同技术</strong>：专业Agent协作</li>
+                    </ul>
+                </div>
+                
+                <!-- 协同机制 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-network-wired text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">协同机制与融合趋势</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        现代AI Agent普遍采用专业化子智能体分工协作机制，通过<strong>Validation Loop（相互校验）机制</strong>实时同步状态，整体鲁棒性提升约60%。
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        两大标准化通信协议成为技术基石：<strong>MCP（Model Context Protocol）</strong>和<strong>A2A（Agent-to-Agent）协议</strong>，推动构建开放互联的"Agent互联网"。
+                    </p>
+                    <p class="text-gray-700">
+                        2026年AI Agent普遍采用"巨人肩膀"策略，整合多模型优势，并引入<strong>异构模型路由策略</strong>实现性能与成本的最佳平衡。
+                    </p>
+                </div>
+            </div>
+            
+            <!-- 图表：核心技术栈 -->
+            <div class="bg-white rounded-2xl shadow-xl p-6 mb-12">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">AI Agent核心技术栈构成</h3>
+                <div id="techStackChart" class="chart-container"></div>
+            </div>
+            
+            <!-- 表格：分层记忆体系 -->
+            <div class="bg-white rounded-2xl shadow-xl p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">分层记忆与持续学习机制</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">记忆层级</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">存储内容</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">生命周期</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">访问频率</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Working Memory</td>
+                                <td class="px-6 py-4 text-gray-700">当前任务上下文、执行步骤、临时结果</td>
+                                <td class="px-6 py-4 text-gray-700">任务存续期</td>
+                                <td class="px-6 py-4"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">极高</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Hot Memory</td>
+                                <td class="px-6 py-4 text-gray-700">近期任务经验、用户偏好、高频工具调用记录</td>
+                                <td class="px-6 py-4 text-gray-700">7-30天</td>
+                                <td class="px-6 py-4"><span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">高</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">Cold Memory</td>
+                                <td class="px-6 py-4 text-gray-700">领域知识库、历史任务归档、长期经验</td>
+                                <td class="px-6 py-4 text-gray-700">永久</td>
+                                <td class="px-6 py-4"><span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">中低频</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第二章：架构范式 -->
+    <section class="section-bg-3 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-sitemap text-purple-600 mr-3"></i>02：AI Agent常用架构范式
+            </h2>
+            
+            <!-- 架构范式介绍 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- 反射型 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-bolt text-purple-600"></i>
+                        </div>
+                        <h4 class="font-bold ml-3">反射型</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">遵循"感知-行动"直接映射机制</p>
+                    <ul class="text-xs text-gray-700 space-y-1">
+                        <li><i class="fas fa-check-circle text-green-500 mr-1"></i>毫秒级响应</li>
+                        <li><i class="fas fa-times-circle text-red-500 mr-1"></i>无记忆能力</li>
+                        <li><i class="fas fa-industry text-blue-500 mr-1"></i>工业自动化控制</li>
+                    </ul>
+                </div>
+                
+                <!-- 分层型 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-layer-group text-purple-600"></i>
+                        </div>
+                        <h4 class="font-bold ml-3">分层型</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">垂直分层实现职责分离</p>
+                    <ul class="text-xs text-gray-700 space-y-1">
+                        <li><i class="fas fa-check-circle text-green-500 mr-1"></i>反应/审慎/元认知层</li>
+                        <li><i class="fas fa-chart-line text-blue-500 mr-1"></i>系统吞吐量提升300%</li>
+                        <li><i class="fas fa-robot text-blue-500 mr-1"></i>机器人操作系统</li>
+                    </ul>
+                </div>
+                
+                <!-- 多Agent系统 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-users text-purple-600"></i>
+                        </div>
+                        <h4 class="font-bold ml-3">多Agent系统</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">2026年默认形态之一</p>
+                    <ul class="text-xs text-gray-700 space-y-1">
+                        <li><i class="fas fa-check-circle text-green-500 mr-1"></i>主控+子Agent协作</li>
+                        <li><i class="fas fa-code-branch text-blue-500 mr-1"></i>A2A/MCP协议驱动</li>
+                        <li><i class="fas fa-briefcase text-blue-500 mr-1"></i>企业营销全流程协同</li>
+                    </ul>
+                </div>
+                
+                <!-- 学习型 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-purple-600"></i>
+                        </div>
+                        <h4 class="font-bold ml-3">学习型</h4>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-3">执行→反馈→更新知识闭环</p>
+                    <ul class="text-xs text-gray-700 space-y-1">
+                        <li><i class="fas fa-check-circle text-green-500 mr-1"></i>自适应性系统</li>
+                        <li><i class="fas fa-chart-bar text-blue-500 mr-1"></i>效用函数加权求解</li>
+                        <li><i class="fas fa-user-cog text-blue-500 mr-1"></i>个性化推荐Agent</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 多Agent系统图表 -->
+            <div class="bg-white rounded-2xl shadow-xl p-6 mb-12">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">多Agent系统（MAS）成为主流架构</h3>
+                <div id="masChart" class="chart-container"></div>
+            </div>
+            
+            <!-- 架构演进趋势表格 -->
+            <div class="bg-white rounded-2xl shadow-xl p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">2026年AI Agent架构演进趋势</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">从单体到分布式智能体网络</h4>
+                        <p class="text-gray-700">架构演进路径：单体模型 → 协作体系 → 跨域智能网络</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">协议驱动的生态收敛</h4>
+                        <p class="text-gray-700">MCP、A2A、AP2成为三大支柱协议，推动标准化协作</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">人机混合工作流成为新常态</h4>
+                        <p class="text-gray-700">"人类在环（HITL）"模式，AI自主执行+人类关键干预</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">长时间运行Agent兴起</h4>
+                        <p class="text-gray-700">如Rakuten案例中ClaudeCode耗时7小时完成复杂功能开发</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三章：发展趋势 -->
+    <section class="section-bg-4 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-chart-line text-amber-600 mr-3"></i>03：AI Agent发展趋势分析
+            </h2>
+            
+            <!-- 趋势概览 -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <!-- 自主性趋势 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-cogs text-blue-500 mr-2"></i>自主性趋势
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-memory text-green-500 mt-1 mr-2"></i>
+                            <span><strong>长期记忆扩展</strong>：数万token窗口，遗忘率降低90%+</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-users text-purple-500 mt-1 mr-2"></i>
+                            <span><strong>多Agent协作</strong>：分工型团队，协作效率提升71%</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-up text-red-500 mt-1 mr-2"></i>
+                            <span><strong>自进化能力</strong>：月均性能提升15%</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 商业化趋势 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-business-time text-green-500 mr-2"></i>商业化趋势
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-globe text-blue-500 mt-1 mr-2"></i>
+                            <span><strong>市场规模</strong>：2026年达187亿美元（+215%）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-building text-purple-500 mt-1 mr-2"></i>
+                            <span><strong>企业渗透率</strong>：集成Agent应用占比达40%</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-user-tie text-amber-500 mt-1 mr-2"></i>
+                            <span><strong>AaaS模式</strong>：按任务成功率、人力节省时数计费</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 生态阵营 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-ecosystem text-purple-500 mr-2"></i>生态阵营三分天下
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-3 h-3 bg-blue-500 rounded-full mt-1 mr-2"></div>
+                            <span><strong>科技巨头</strong>：60%+份额（腾讯、阿里、字节）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-3 h-3 bg-green-500 rounded-full mt-1 mr-2"></div>
+                            <span><strong>AI原生企业</strong>：25%份额（OpenAI、DeepSeek）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-3 h-3 bg-amber-500 rounded-full mt-1 mr-2"></div>
+                            <span><strong>垂直服务商</strong>：15%份额（金蝶、汉得信息）</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <!-- 风险与挑战表格 -->
+            <div class="bg-white rounded-2xl shadow-xl p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">风险与挑战</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">挑战类型</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">具体表现</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">影响程度</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">技术风险</td>
+                                <td class="px-6 py-4 text-gray-700">复杂任务规划失误、工具调用失败可能导致业务中断</td>
+                                <td class="px-6 py-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 67%"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-600 mt-1">跨场景迁移能力67%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">数据安全</td>
+                                <td class="px-6 py-4 text-gray-700">Agent访问多场景数据引发隐私泄露风险</td>
+                                <td class="px-6 py-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-red-500 h-2 rounded-full" style="width: 46%"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-600 mt-1">46%企业列为首要顾虑</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">商业可持续性</td>
+                                <td class="px-6 py-4 text-gray-700">C端付费意愿分化，企业端定制化成本高</td>
+                                <td class="px-6 py-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-orange-500 h-2 rounded-full" style="width: 39%"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-600 mt-1">39%企业面临盈利压力</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">组织适配</td>
+                                <td class="px-6 py-4 text-gray-700">人机协同需重构工作流程，员工技能适配挑战</td>
+                                <td class="px-6 py-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-500 h-2 rounded-full" style="width: 39%"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-600 mt-1">39%企业面临变革管理挑战</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第四章：岗位要求 -->
+    <section class="section-bg-1 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-user-tie text-gray-600 mr-3"></i>04：相关岗位任职要求与职责
+            </h2>
+            
+            <!-- 岗位分类 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- 技术研发类 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-code text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">技术研发类</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-caret-right text-blue-500 mt-1 mr-2"></i>
+                            <span>AI Agent研发工程师</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-caret-right text-blue-500 mt-1 mr-2"></i>
+                            <span>高级后端开发工程师</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-caret-right text-blue-500 mt-1 mr-2"></i>
+                            <span>AI Agent算法工程师</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 产品运营类 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-chart-bar text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">产品运营类</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-caret-right text-green-500 mt-1 mr-2"></i>
+                            <span>AI Agent产品运营</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-caret-right text-green-500 mt-1 mr-2"></i>
+                            <span>行业Agent产品经理</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-caret-right text-green-500 mt-1 mr-2"></i>
+                            <span>产品策略与商业模式</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 新兴角色类 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user-astronaut text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">新兴角色类</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-caret-right text-purple-500 mt-1 mr-2"></i>
+                            <span>AI Agent指挥官</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-caret-right text-purple-500 mt-1 mr-2"></i>
+                            <span>AI调度官</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-caret-right text-purple-500 mt-1 mr-2"></i>
+                            <span>Agent架构师</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 核心技术能力图表 -->
+            <div class="bg-white rounded-2xl shadow-xl p-6 mb-12">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">核心技术能力要求</h3>
+                <div id="skillsChart" class="chart-container">
+	<table border="1" class="dataframe" style="border-collapse: collapse; width: 100%; text-align: left;">
+	  <thead>
+	    <tr style="background-color: #f2f2f2;">
+	      <th style="padding: 12px; border: 1px solid #ddd;">能力维度</th>
+	      <th style="padding: 12px; border: 1px solid #ddd;">核心技能点</th>
+	      <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">AI Agent研究员</th>
+	      <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">AI Agent工程师</th>
+	      <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">AI产品经理</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td style="padding: 12px; border: 1px solid #ddd;"><strong>大模型与深度学习基础</strong></td>
+	      <td style="padding: 12px; border: 1px solid #ddd;">Transformer, SFT, RLHF, 模型评估</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★★</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★☆</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★☆☆</td>
+	    </tr>
+	    <tr style="background-color: #fafafa;">
+	      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Agent架构与算法设计</strong></td>
+	      <td style="padding: 12px; border: 1px solid #ddd;">ReAct, Reflexion, MCP, 多智能体</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★★</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★★</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★☆</td>
+	    </tr>
+	    <tr>
+	      <td style="padding: 12px; border: 1px solid #ddd;"><strong>工程化与系统构建能力</strong></td>
+	      <td style="padding: 12px; border: 1px solid #ddd;">LangChain, Docker, K8s, 高并发</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★☆☆</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★★</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★☆☆☆</td>
+	    </tr>
+	    <tr style="background-color: #fafafa;">
+	      <td style="padding: 12px; border: 1px solid #ddd;"><strong>RAG与知识工程能力</strong></td>
+	      <td style="padding: 12px; border: 1px solid #ddd;">向量检索, Hybrid RAG, 知识图谱</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★☆☆</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★☆</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★☆</td>
+	    </tr>
+	    <tr>
+	      <td style="padding: 12px; border: 1px solid #ddd;"><strong>评估、迭代与产品思维</strong></td>
+	      <td style="padding: 12px; border: 1px solid #ddd;">A/B测试, 评估指标, 需求转化</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★☆☆</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★☆</td>
+	      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">★★★★★</td>
+	    </tr>
+	  </tbody>
+	</table>
+	</div>
+            </div>
+            
+            <!-- 薪酬水平表格 -->
+            <div class="bg-white rounded-2xl shadow-xl p-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">新兴职业路径与薪酬水平</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">经验层级</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">年薪范围（人民币）</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">岗位级别</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">关键技能</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">初级搭建师</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full font-medium">25-40万</span>
+                                </td>
+                                <td class="px-6 py-4 text-gray-700">助理工程师</td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-wrap">
+                                        <span class="skill-badge">Python基础</span>
+                                        <span class="skill-badge">Prompt工程</span>
+                                        <span class="skill-badge">RAG入门</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">中级搭建师</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full font-medium">40-80万</span>
+                                </td>
+                                <td class="px-6 py-4 text-gray-700">工程师/高级工程师</td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-wrap">
+                                        <span class="skill-badge">多Agent系统</span>
+                                        <span class="skill-badge">模型微调</span>
+                                        <span class="skill-badge">系统部署</span>
+                                        <span class="skill-badge">分布式架构</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-gray-900">高级/首席搭建师</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full font-medium">80-200万+</span>
+                                </td>
+                                <td class="px-6 py-4 text-gray-700">架构师/CTO</td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-wrap">
+                                        <span class="skill-badge">Agent架构设计</span>
+                                        <span class="skill-badge">安全治理</span>
+                                        <span class="skill-badge">商业闭环</span>
+                                        <span class="skill-badge">团队管理</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-sm text-gray-600 mt-4">
+                    <i class="fas fa-info-circle text-blue-500 mr-1"></i>注：顶尖架构师年薪可达150万元，具备该能力的CTO年薪可达200–300万元。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 总结与展望 -->
+    <section class="gradient-bg py-12 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">
+                    <i class="fas fa-eye mr-3"></i>总结与展望
+                </h2>
+                
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+                    <p class="text-lg mb-6">
+                        2026年是AI Agent发展的关键转折点。其已从技术演示走向生产系统，成为"新质生产力"的核心引擎。通过LLM、记忆、规划、工具与协同五大技术的深度融合，AI Agent实现了从"辅助生成"到"自主执行"的跨越。
+                    </p>
+                    
+                    <p class="text-lg mb-6">
+                        <span class="font-bold">多Agent系统与A2A/MCP协议</span>正在构建一个开放、互联的智能生态，而<span class="font-bold">具身智能与多模态交互</span>则推动其从虚拟走向物理世界。
+                    </p>
+                    
+                    <p class="text-lg mb-6">
+                        在商业化层面，AaaS模式正重塑企业IT投资逻辑，B端降本增效效果显著，C端流量入口争夺白热化。然而，数据安全、组织适配与商业模式可持续性仍是主要挑战。人才市场上，<span class="font-bold">Agent架构师供需比高达1:10</span>，凸显高端复合型人才的稀缺性。
+                    </p>
+                    
+                    <p class="text-lg font-bold">
+                        未来，AI Agent将持续向长期运行、自进化与社会性智能演进，最终融入社会运行的毛细血管，成为不可或缺的"数字劳动力"。
+                    </p>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <div class="inline-flex space-x-4">
+                        <a href="https://www.shenlanxueyuan.com/course/840?transform=631a7e5bb9" class="px-4 py-2 bg-white text-purple-600 rounded-full font-medium hover:bg-opacity-90 transition">
+                            <i class="fas fa-external-link-alt mr-2"></i>Agent课程学习
+                        </a>
+                        <button onclick="window.print()" class="px-4 py-2 bg-white bg-opacity-20 text-white rounded-full font-medium hover:bg-opacity-30 transition">
+                            <i class="fas fa-print mr-2"></i>打印报告
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-6">
+                <p class="text-sm italic border-l-4 border-yellow-500 pl-4 py-2 bg-gray-900 bg-opacity-50 rounded-r">
+                    <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+                    本内容由AI Agent生成，可能存在错误或不准确之处。请在使用前自行核实信息的准确性。
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm">
+                        <i class="far fa-copyright mr-1"></i>2026 AI Agent技术调研报告
+                    </p>
+                    <p class="text-xs text-gray-500 mt-1">最后更新：2026年2月12日</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fas fa-rss text-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fas fa-envelope text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 初始化图表
+        document.addEventListener('DOMContentLoaded', function() {
+            // 核心技术栈图表
+            const techStackChart = echarts.init(document.getElementById('techStackChart'));
+            const techStackOption = {
+                title: {
+                    text: 'AI Agent五大核心技术栈构成',
+                    left: 'center',
+                    textStyle: {
+                        color: '#333',
+                        fontSize: 16,
+                        fontWeight: 'bold'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{a} <br/>{b}: {c}%'
+                },
+                legend: {
+                    orient: 'vertical',
+                    left: 'left',
+                    top: 'middle',
+                    textStyle: {
+                        color: '#666'
+                    }
+                },
+                series: [
+                    {
+                        name: '技术占比',
+                        type: 'pie',
+                        radius: ['40%', '70%'],
+                        center: ['60%', '50%'],
+                        avoidLabelOverlap: false,
+                        itemStyle: {
+                            borderRadius: 10,
+                            borderColor: '#fff',
+                            borderWidth: 2
+                        },
+                        label: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            label: {
+                                show: true,
+                                fontSize: 18,
+                                fontWeight: 'bold'
+                            }
+                        },
+                        labelLine: {
+                            show: false
+                        },
+                        data: [
+                            {value: 30, name: '大语言模型 (LLM)', itemStyle: {color: '#5470c6'}},
+                            {value: 20, name: '任务规划与推理', itemStyle: {color: '#91cc75'}},
+                            {value: 20, name: '记忆系统技术', itemStyle: {color: '#fac858'}},
+                            {value: 15, name: '工具调用技术', itemStyle: {color: '#ee6666'}},
+                            {value: 15, name: '多智能体协同', itemStyle: {color: '#73c0de'}}
+                        ]
+                    }
+                ]
+            };
+            techStackChart.setOption(techStackOption);
+
+            // 多Agent系统架构图
+            const masChart = echarts.init(document.getElementById('masChart'));
+            const masOption = {
+                title: {
+                    text: '多Agent系统（MAS）协作架构',
+                    left: 'center',
+                    textStyle: {
+                        color: '#333',
+                        fontSize: 16,
+                        fontWeight: 'bold'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{b}: {c}%'
+                },
+                series: [
+                    {
+                        type: 'graph',
+                        layout: 'circular',
+                        symbolSize: 60,
+                        roam: true,
+                        label: {
+                            show: true,
+                            position: 'inside',
+                            fontSize: 12,
+                            fontWeight: 'bold'
+                        },
+                        edgeSymbol: ['circle', 'arrow'],
+                        edgeSymbolSize: [4, 10],
+                        edgeLabel: {
+                            fontSize: 12
+                        },
+                        data: [
+                            {
+                                name: '主控Agent',
+                                value: 100,
+                                itemStyle: {color: '#5470c6'},
+                                symbolSize: 80
+                            },
+                            {name: '规划Agent', value: 80, itemStyle: {color: '#91cc75'}},
+                            {name: '执行Agent', value: 80, itemStyle: {color: '#fac858'}},
+                            {name: '验证Agent', value: 80, itemStyle: {color: '#ee6666'}},
+                            {name: '数据Agent', value: 70, itemStyle: {color: '#73c0de'}},
+                            {name: '通信Agent', value: 70, itemStyle: {color: '#3ba272'}}
+                        ],
+                        links: [
+                            {source: '主控Agent', target: '规划Agent', value: '任务分配'},
+                            {source: '主控Agent', target: '执行Agent', value: '指令下达'},
+                            {source: '主控Agent', target: '验证Agent', value: '结果校验'},
+                            {source: '规划Agent', target: '执行Agent', value: '工作流'},
+                            {source: '执行Agent', target: '验证Agent', value: '交叉验证'},
+                            {source: '数据Agent', target: '主控Agent', value: '数据支持'},
+                            {source: '通信Agent', target: '所有', value: '状态同步'}
+                        ],
+                        lineStyle: {
+                            color: 'source',
+                            curveness: 0.3,
+                            width: 2
+                        }
+                    }
+                ]
+            };
+            masChart.setOption(masOption);
+
+            // 市场规模图表
+            const marketChart = echarts.init(document.getElementById('marketChart'));
+            const marketOption = {
+                title: {
+                    text: 'AI Agent市场规模预测（单位：亿美元）',
+                    left: 'center',
+                    textStyle: {
+                        color: '#333',
+                        fontSize: 16,
+                        fontWeight: 'bold'
+                    }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['2024', '2025', '2026预测'],
+                    axisLine: {
+                        lineStyle: {
+                            color: '#999'
+                        }
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '市场规模',
+                    axisLine: {
+                        lineStyle: {
+                            color: '#999'
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: '全球市场',
+                        type: 'bar',
+                        data: [
+                            {value: 36, itemStyle: {color: '#5470c6'}},
+                            {value: 113, itemStyle: {color: '#91cc75'}},
+                            {value: 187, itemStyle: {color: '#fac858'}
+                        }],
+                        label: {
+                            show: true,
+                            position: 'top',
+                            formatter: '{c}'
+                        }
+                    },
+                    {
+                        name: '同比增长',
+                        type: 'line',
+                        data: [null, 214, 65],
+                        yAxisIndex: 1,
+                        symbol: 'circle',
+                        symbolSize: 8,
+                        lineStyle: {
+                            color: '#ee6666',
+                            width: 3
+                        },
+                        label: {
+                            show: true,
+                            position: 'top',
+                            formatter: '{c}%'
+                        }
+                    }
+                ]
+            };
+            marketChart.setOption(marketOption);
+
+            // 技能要求图表
+            const skillsChart = echarts.init(document.getElementById('skillsChart'));
+            const skillsOption = {
+                title: {
+                    text: 'AI Agent岗位核心技术能力需求热度',
+                    left: 'center',
+                    textStyle: {
+                        color: '#333',
+                        fontSize: 16,
+                        fontWeight: 'bold'
+                    }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'value',
+                    max: 100,
+                    axisLine: {
+                        lineStyle: {
+                            color: '#999'
+                        }
+                    }
+                },
+                yAxis: {
+                    type: 'category',
+                    data: ['RAG技术', '多Agent系统', '模型微调', 'Prompt工程', '工具调用', '系统部署', 'Python编程'],
+                    axisLine: {
+                        lineStyle: {
+                            color: '#999'
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: '需求热度',
+                        type: 'bar',
+                        data: [95, 90, 85, 88, 82, 78, 92],
+                        itemStyle: {
+                            color: function(params) {
+                                const colors = ['#5470c6', '#91cc75', '#fac858', '#ee6666', '#73c0de', '#3ba272', '#9a60b4'];
+                                return colors[params.dataIndex % colors.length];
+                            }
+                        },
+                        label: {
+                            show: true,
+                            position: 'right',
+                            formatter: '{c}%'
+                        }
+                    }
+                ]
+            };
+            skillsChart.setOption(skillsOption);
+
+            // 响应式调整
+            window.addEventListener('resize', function() {
+                techStackChart.resize();
+                masChart.resize();
+                marketChart.resize();
+                skillsChart.resize();
+            });
+        });
+    </script>
+</body>
+</html>
